@@ -3,7 +3,7 @@ export const Bio = {
   roles: ["Full Stack Developer", "Front End Developer"],
   description: "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/hayagreev2003",
-  resume: "https://drive.google.com/file/d/1CA04bFyXNsBH8laZeLWM6MMOIm9zt9FV/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1Pw2d7CBZcyQiUlhKYg4Z4Y2g5ClcQdvV/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/hari-ramahayagreev-565a72200/",
   twitter: "https://twitter.com/HariHayagreev",
   insta: "https://www.instagram.com/__h__r__h__/",
