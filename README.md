@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Hari Rama Hayagreev — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio site showcasing my work as a full-stack developer building geospatial climate-intelligence platforms and AI multi-agent systems.
 
-## Available Scripts
+**Live:** https://hayagreev2003.github.io/portfolio/
 
-In the project directory, you can run:
+## Sections
 
-### `npm start`
+- **Hero** — intro, rotating roles and a link to my resume
+- **Skills** — frontend, geospatial/visualisation, backend, data, AI/LLM and cloud tooling
+- **Experience** — timeline of roles
+- **Projects** — filterable cards (Web Apps / AI & ML) with a detail modal and live links
+- **Education**
+- **Footer** — quick navigation plus LinkedIn and GitHub links
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [React 18](https://react.dev/) (Create React App)
+- [styled-components](https://styled-components.com/) for styling and theming
+- [MUI](https://mui.com/) (icons, timeline components)
+- [typewriter-effect](https://www.npmjs.com/package/typewriter-effect) for the hero roles
+- [gh-pages](https://www.npmjs.com/package/gh-pages) for deployment to GitHub Pages
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Requires Node.js and npm.
 
-### `npm run build`
+```bash
+git clone https://github.com/hayagreev2003/portfolio.git
+cd portfolio
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The dev server runs at http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Updating Content
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+All content lives in [`src/data/constants.js`](src/data/constants.js):
 
-### `npm run eject`
+| Export        | What it controls                                      |
+| ------------- | ----------------------------------------------------- |
+| `Bio`         | Name, roles, intro text, resume, GitHub and LinkedIn  |
+| `skills`      | Skill groups and their logos                          |
+| `experiences` | Experience timeline entries                           |
+| `education`   | Education entries                                     |
+| `projects`    | Project cards (`category`: `web app` or `machine learning`) |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Images (`image` / `img`) and project links (`github` / `webapp`) are optional; cards hide them when absent. Local images go in `src/images/` and are imported at the top of `constants.js`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Colours are defined in [`src/utils/Themes.js`](src/utils/Themes.js). The favicon and app icons are in `public/`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Scripts
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| Command          | Description                                   |
+| ---------------- | --------------------------------------------- |
+| `npm start`      | Run the development server                    |
+| `npm run build`  | Create a production build in `build/`         |
+| `npm test`       | Run tests in watch mode                       |
+| `npm run deploy` | Build and publish `build/` to the `gh-pages` branch |
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The site is hosted on GitHub Pages from the `gh-pages` branch. The `homepage` field in `package.json` sets the base path (`/portfolio`).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run deploy
+```
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- LinkedIn: [hari-ramahayagreev](https://www.linkedin.com/in/hari-ramahayagreev-565a72200/)
+- GitHub: [hayagreev2003](https://github.com/hayagreev2003)
