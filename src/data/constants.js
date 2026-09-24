@@ -4,7 +4,7 @@ import dattamLogo from "../images/dattam.png";
 
 export const Bio = {
   name: "Hari Rama Hayagreev",
-  roles: ["Full Stack Developer", "Geospatial Web Developer", "AI Agent Developer"],
+  roles: ["Full Stack Developer", "DevOps Engineer", "AI Agent Developer"],
   description: "Full-stack software developer building end-to-end geospatial climate-intelligence platforms and AI multi-agent systems for production. I take projects from raw data pipelines to interactive, map-driven web apps, working with React/Next.js, FastAPI, PostgreSQL, LLMs and cloud platforms (AWS, GCP).",
   github: "https://github.com/hayagreev2003",
   resume: "https://drive.google.com/file/d/1mOAPKz8r5bz4_aTZ6TLrAw2VKCsqB7Lx/view?usp=sharing",

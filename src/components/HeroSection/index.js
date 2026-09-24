@@ -213,7 +213,7 @@ const Hero = () => {
           <HeroLeftContainer>
             <Title>Hi, I am <br /> {Bio.name}</Title>
             <TextLoop>
-                I am a
+                <span style={{ whiteSpace: "nowrap" }}>I am a</span>
                 <Span>
                   <Typewriter
                       options={{
