@@ -1,5 +1,6 @@
 import cravisImage from "../images/cravis.jpg";
 import erasImage from "../images/eras.jpg";
+import dattamLogo from "../images/dattam.png";
 
 export const Bio = {
   name: "Hari Rama Hayagreev",
@@ -85,6 +86,8 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: dattamLogo,
+    url: "https://dattam.in/",
     role: "Software Developer",
     company: "Dattam Labs, Hyderabad",
     date: "Sep 2024 - Present",

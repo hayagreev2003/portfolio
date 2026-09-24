@@ -146,10 +146,16 @@ const ExperienceCard = ({ experience }) => {
   return (
     <Card>
       <Top>
-          {experience.img && <Image src={experience.img} />}
+          {experience.img && (experience.url
+              ? <a href={experience.url} target="_blank" rel="noopener noreferrer"><Image src={experience.img} alt={experience.company} /></a>
+              : <Image src={experience.img} alt={experience.company} />)}
           <Body>
               <Role>{experience.role}</Role>
-              <Company>{experience.company}</Company>
+              <Company>
+                  {experience.url
+                      ? <a href={experience.url} target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>{experience.company}</a>
+                      : experience.company}
+              </Company>
               <Date>{experience.date}</Date>
           </Body>
       </Top>
